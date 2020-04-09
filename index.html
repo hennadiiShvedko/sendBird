@@ -1,36 +1,346 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <link rel='shortcut icon' href='https://s3.amazonaws.com/sendbird-static/favicon/favicon.ico' type='image/x-icon'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>CO MO Chat example for Sendbird</title>
+    <!-- BEGIN_HEAD --><!-- START_SNIPPET:part0 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
+    <title>CO Meeting Organizer EGU2020</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
+    <link rel="preconnect" href="https://egu2019.waldorf/" crossorigin>
+    <!--  <link rel="dns-prefetch" href="https://egu2019.waldorf/">-->
 
+    <link rel="preconnect" href="https://cdn.copernicus.org/" crossorigin>
+    <link rel="preconnect" href="https://waldorf-contentmanager.copernicus.org/" crossorigin>
+    <link rel="preconnect" href="https://waldorf-meetingorganizer.copernicus.org/" crossorigin>
 
-  </style>
+    <link rel="icon" size="16x16" href="./assets/icons/favicon_egu_16x16_.ico" type="image/x-icon"/>
+    <link rel="icon" size="24x24" href="./assets/icons/favicon_egu_24x24_.ico" type="image/x-icon"/>
+    <link rel="icon" size="32x32" href="./assets/icons/favicon_egu_32x32_.png" type="image/png-icon"/>
+    <link rel="icon" size="48x48" href="./assets/icons/favicon_egu_48x48_.ico" type="image/x-icon"/>
+    <link rel="icon" size="64x64" href="./assets/icons/favicon_egu_64x64_.ico" type="image/x-icon"/>
+    <link rel="icon" size="228x228" href="./assets/icons/favicon_egu_228x228_.png" type="image/png-icon"/>
+    <link rel="icon" size="195x195" href="./assets/icons/favicon_egu_195x195_.png" type="image/png-icon"/>
+    <link rel="icon" size="196x196" href="./assets/icons/favicon_egu_196x196_.png" type="image/png-icon"/>
+    <link rel="icon" size="128x128" href="./assets/icons/favicon_egu_128x128_.png" type="image/png-icon"/>
+    <link rel="icon" size="96x96" href="./assets/icons/favicon_egu_96x96_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="180x180" href="./assets/icons/favicon_egu_180x180_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="120x120" href="./assets/icons/favicon_egu_120x120_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="152x152" href="./assets/icons/favicon_egu_152x152_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="76x76" href="./assets/icons/favicon_egu_76x76_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="57x57" href="./assets/icons/favicon_egu_57x57_.png" type="image/png-icon"/>
+    <link rel="apple-touch-icon" size="144x144" href="./assets/icons/favicon_egu_144x144_.png" type="image/png-icon"/>
 
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/libraries/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/libraries/bootstrap/4.0.0/css/bootstrap-media.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/libraries/bootstrap/4.0.0/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/libraries/bootstrap/4.0.0/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/css/copernicus-min.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.copernicus.org/fonts/FontAwesome/5.11.2/css/all.font.css"/>
+
+    <link rel="stylesheet" type="text/css" media="projection, handheld, screen, tty, tv, print" href="https://waldorf-contentmanager.copernicus.org/75462/601/ssl"/>
+    <link rel="stylesheet" type="text/css" media="projection, handheld, screen, tty, tv, print" href="https://waldorf-contentmanager.copernicus.org/237997/601/ssl"/>
+    <link rel="stylesheet" type="text/css" media="projection, handheld, screen, tty, tv, print" href="https://waldorf-contentmanager.copernicus.org/18288/601/ssl"/>
+    <link rel="stylesheet" type="text/css" media="projection, handheld, screen, tty, tv, print" href="https://waldorf-contentmanager.copernicus.org/26542/601/ssl"/>
+    <link rel="stylesheet" type="text/css" media="projection, handheld, screen, tty, tv, print" href="https://waldorf-contentmanager.copernicus.org/408898/601/ssl"/>
+    <!-- END_SNIPPET:part0 --><!-- END_HEAD --><!-- $$HTML_TITLE$$ -->
+    <meta name="data-non-mobile-optimized-message" content=""/>
+    <link rel="stylesheet" type="text/css" media="all" href="https://waldorf-contentmanager.copernicus.org/2011/601/ssl"/>
+    <link data-co-mo-assets="css" href="https://waldorf-meetingorganizer.copernicus.org//webfiles/css/meetingorganizer-old.css" media="all" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://waldorf-meetingorganizer.copernicus.org//webfiles/css/HTMLAbstracts.css" type="text/css"/>
+    <link rel="stylesheet" href="https://waldorf-meetingorganizer.copernicus.org//webfiles/css/programmeType.css" type="text/css"/>
+    <style type="text/css">
+        .top_menu {
+            margin-right: 0 !important;
+        }
+
+    </style>
 </head>
 <body>
+<header class="d-print-none">
+    <div id="navigation">
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="content-chat" id="sb_chat"></div>
+        <nav class="container navbar navbar-expand-lg navbar-light"><!-- Logo -->
+            <div class="row mr-0 ml-0 align-items-center w-100 mb-0 mb-lg-3 mb-xl-2">
+
+                <div class="col-9 col-lg-5 p-0">
+
+                    <div class="layout__moodboard-logo-year-container">
+
+                        <a class="layout__moodboard-logo-link" href="https://www.egu2019.waldorf/">
+
+                            <div class="layout__moodboard-logo">
+
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0px; height: 0px;">
+                                    <image xlink:href="https://waldorf-contentmanager.copernicus.org/361937/601/ssl" width="100%" height="100%" src="https://waldorf-contentmanager.copernicus.org/361939/601/ssl"></image>
+                                </svg>
+                            </div>
+
+                        </a>
+
+                        <span class="layout__m-location-and-time-mobile d-lg-none">Vienna | Austria | 3–8 May 2020</span>
+
+                    </div>
+
+                </div>
+
+                <div class="d-none d-xl-block d-lg-block col-xl-7 col-lg-7 text-md-right text-xl-left pr-0">
+
+                    <div class="layout__m-location-and-time d-none d-lg-block">Vienna | Austria | 3–8 May 2020</div>
+
+                </div>
+
+                <!-- End Logo -->
+
+                <!-- Topbar -->
+
+                <div class="topbar d-print-none" id="userWrapperPWA" style="display: none;">
+
+                    <div id="co_auth_check_authiframecontainer">
+                        <div class="co_administrator_menu_userinfo">
+                            <p>
+                                <span class="co_administrator_menu_userinfo-name"><a target="_blank" href="https://administrator.copernicus.org/" id="userInfoPWA"></a></span> <span class="co_administrator_menu_userinfo-userid" id="userIdPWA"></span>
+                            </p>
+                            <a id="co_administrator_menu_userinfo_copernicus-office" target="_top" href="https://administrator.copernicus.org/index.php">Copernicus Office</a><br/><a target="_top" id="co_administrator_menu_userinfo_logout" href="https://administrator.copernicus.org/logout">LOGOUT</a><br/></div>
+                    </div>
+
+                </div>
+
+                <!-- End Topbar -->
+
+                <div class="col-3 text-right pr-0">
+
+                    <button class="navbar-toggler mx-auto mr-sm-0" type="button" data-toggle="collapse" data-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                </div>
+
+                <div class="col-12 layout__m-location-and-time-sm-mobile p-0">Vienna | Austria | 3–8 May 2020</div>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse CMSCONTAINER" id="navbar_menu">
+
+                <div id="cmsbox_105858" class="cmsbox navbar-collapse">
+                    <button style="display: none;" class="navbar-toggler navigation-extended-toggle-button" type="button" data-toggle="collapse" data-target="#navbar_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse CMSCONTAINER collapse show" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a target="_self" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown8750" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About &amp; support
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown8750">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/about_and_support/general_information.html">General information</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/about_and_support/programme_committee.html">Programme Committee</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/about_and_support/rules_of_conduct.html">Rules of conduct</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a target="_self" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown8929" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Abstracts &amp; programme
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown8929">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="dropdown-header">Programme</div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/abstracts_and_programme/how_to_access_the_programme.html">How to access the programme</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="meeting">Browse by day &amp; time</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="session">Browse by session</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/egu2019/sessionschedule">Session schedules by PG</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/EGU2019/sessions-of-special-interest/ECS">Sessions of ECS interest</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/EGU2019/sessions-of-special-interest/media">Sessions of media interest</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/EGU2019/abstracts-of-special-interest/highlight">Abstracts of special interest</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/EGU2019/presentations">Uploaded presentations</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/abstracts_and_programme/webstreaming.html">Webstreaming</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/abstracts_and_programme/licence_and_copyright.html">Licence and copyright</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a target="_self" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown8847" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register &amp; venue
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown8847">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/register_and_venue/registration.html">Registration</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/register_and_venue/venue.html">Venue</a>
+                                                </div>
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_blank" class="" href="https://www.egu.eu/news/399/egu-takes-measures-to-reduce-environmental-impact-of-its-general-assembly/">Reducing environmental impact 2018</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a target="_self" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown8932" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exhibition
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown8932">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://egu2019.waldorf/exhibition/list_of_exhibitors.html">List of exhibitors</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a target="_self" class="nav-link  " data-non-mobile-optimized="1" href="https://www.egu.eu/gamedia/2019/">Press &amp; media</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a target="_self" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown8941" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Logins
+                                    <span class="caret"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown8941">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="dropdown-item " style="list-style: none">
+                                                    <a target="_self" class="" href="https://waldorf-meetingorganizer.copernicus.org/egu2019/conference_mail_tool">Mailtool for PC members</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
     </div>
-  </div>
-</div>
 
 
+</header>
+<header id="printheader" class="d-none d-print-block container">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0px; height: 0px;">
+        <image xlink:href="https://waldorf-contentmanager.copernicus.org/361937/601/ssl" width="100%" height="100%" src=""></image>
+    </svg>
+</header><!--=== Content ===-->
+<main>
+    <div id="content" class="container">
+
+        <div id="page_content_container" class="CMSCONTAINER">
+            <div class="content-chat" id="sb_chat"></div>
+            <script src="SendBird.min.js"></script>
+            <script src="dist/liveChat.SendBird.js"></script>
+            <script>
+                var appId = '6FC23E4C-BB67-46FE-8CFD-6F4938AAE139';
+                var channelUrl = 'sendbird_open_channel_9022_66b4d2da17a2a821fdc9b3eaf93b19ae7ff96f14'; // channel: text_chat_test
+                liveChat.start(appId, channelUrl);
+            </script>
+
+        </div>
+    </div>
+</main>
+<!--=== End Content ===-->
+<footer class="d-print-none">
+    <div class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 ">
+                    <div class="footer-heading mt-4">
+                        <div class="h2_footer">Follow us</div>
+                    </div>
+                    <ul class="list-inline socialicons layout__footer_social_icons">
+                        <li class="list-inline-item"><a target="_blank" rel="noreferrer" title="Follow us on Twitter" href="https://twitter.com/EuroGeosciences"><i class="rounded-sm fab fa-fw fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank" rel="noreferrer" title="Follow us on Facebook" href="https://www.facebook.com/EuropeanGeosciencesUnion"><i class="rounded-sm fa fa-fw fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank" rel="noreferrer" title="Find us on LinkedIn" href="https://www.linkedin.com/company/european-geosciences-union"><i class="rounded-sm fab fa-fw fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank" rel="noreferrer" title="Find us on Instagram" href="https://www.instagram.com/eurogeosciences/"><i class="rounded-sm fab fa-fw fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank" rel="noreferrer" title="Find us on YouTube" href="https://www.youtube.com/user/EuroGeosciencesUnion"><i class="rounded-sm fa fa-fw fa-youtube"></i></a></li>
+                    </ul>
+                    <span class="layout__footer_tag_tweets">#EGU20</span>
+                </div>
+                <div class="col-md-3 layout__footer_egu_jobs">
+                    <a href="https://www.egu.eu/jobs/" class="layout__footer_egu_jobs--link" target="_blank">
+                        <div class="layout__footer_egu_jobs--horizontal d-md-none d-lg-block">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0px; height: 0px;">
+                                <image xlink:href="https://waldorf-contentmanager.copernicus.org/237994/601/ssl" width="100%" height="100%" src="https://waldorf-contentmanager.copernicus.org/237995/601/ssl"></image>
+                            </svg>
+                        </div>
+                        <div class="layout__footer_egu_jobs--vertical d-none d-md-block d-lg-none">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 0px; height: 0px;">
+                                <image xlink:href="https://waldorf-contentmanager.copernicus.org/237992/601/ssl" width="100%" height="100%" src="https://waldorf-contentmanager.copernicus.org/237993/601/ssl"></image>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 layout__footer_co_meetings_logo">
+                    <a href="https://meetings.copernicus.org" target="_blank">
+                        <img src="https://waldorf-contentmanager.copernicus.org/237988/601/ssl" alt="" style="width: 1596px; height: 333px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-md-left">
+                    <div class="d-lg-flex">
+                        <ul class="list-inline mr-md-5 mb-2 mb-md-0 copyright">
+                            <li class="list-inline-item">© 2019 Copernicus GmbH</li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://egu2019.waldorf/imprint.html">Imprint</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="https://www.copernicus.org/data_protection.html" target="_blank">Data protection</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="https://www.egu.eu" target="_blank">EGU.eu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
-
-<script src="SendBird.min.js"></script>
-<script src="dist/liveChat.SendBird.js"></script>
-<script>
-  var appId = '6FC23E4C-BB67-46FE-8CFD-6F4938AAE139';
-  var channelUrl = 'sendbird_open_channel_9022_66b4d2da17a2a821fdc9b3eaf93b19ae7ff96f14'; // channel: text_chat_test
-  liveChat.start(appId, channelUrl);
-</script>
-
 </html>
